@@ -9,10 +9,6 @@ var app = express();
 
 app.set("views", path.resolve(__dirname, "views"));
 app.set("view engine", "ejs");
-
-// var entries = [];
-// app.locals.entries = entries;
-
 app.use(logger("dev"));
 
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -29,19 +25,6 @@ app.get("/", function(req, res, next) {
 app.get("/new-entry", function(req, res, next) {
     res.render("new-entry");
 });
-// app.post("/new-entry", function(req, res, post) {
-//     if(!req.body.name || !req.body.title || !req.body.body) {
-//         res.status(400).send("Entries must have a name, title, and a body");
-//         return;
-//     }
-//     entries.push({
-//         title: req.body.title,
-//         content: req.body.body,
-//         published: new Date()
-//     });
-//     console.log(entries, "ENTRIES!");
-//     res.redirect("/")
-// });
 
 app.post("/new-entry", function(req, res, post) {
     if(!req.body.name || !req.body.title || !req.body.body) {
