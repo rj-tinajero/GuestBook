@@ -69,11 +69,11 @@ app.post("/destroy/:id", function(req, res, post) {
    
 Picture of website looks like this (red x button added to allow for deleting entries):
 
-![site picture](https://photos.google.com/photo/AF1QipNXbl6bR2a-wziZ9347Wc13OV2YIX3e_JtIl7m3)
+[site picture](https://photos.google.com/photo/AF1QipNXbl6bR2a-wziZ9347Wc13OV2YIX3e_JtIl7m3)
 
 
 Picture of entries in table model:
 
-![table image](https://photos.google.com/photo/AF1QipNPH_b5sAzSuju_RMrT8J6pWNIxX7fzgd6K14cf)
+[table image](https://photos.google.com/photo/AF1QipNPH_b5sAzSuju_RMrT8J6pWNIxX7fzgd6K14cf)
 
 
