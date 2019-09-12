@@ -3,20 +3,22 @@
     <% entries.forEach(function(entry) { %>
         <div class="panel panel-default">
             <div class="panel-heading">
-                    <div class="text-muted pull-left">
-                            <%= entry.name %>
-                        </div>
-                <div class="text-muted pull-right">
-                    <%= entry.published %>
-                    <form method="post" action="/destroy/<%= entry.id %>">
-                        <button type="submit" class="btn btn-danger">X</button>
-                    </form>
+                <div class="text-muted pull-left">
+                    <%= entry.name %>
                 </div>
-                <hr>
-                <%= entry.title %>
+                <div class="text-muted text-right">
+                    <%= entry.published %>
+                </div>
+                
+              
             </div>
             <div class="panel-body">
+                <%= entry.title %>
+                <hr>
                 <%= entry.content %>
+                <form method="post" action="/destroy/<%= entry.id %>">
+                    <button type="submit" class="btn btn-danger">X</button>
+                </form>
             </div> 
         </div>
     
